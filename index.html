@@ -20,10 +20,10 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: "#da373d",
                         brand: "#3752FD",
                         title: "#00303C",
-                        paragraph: "#000000"
+                        paragraph: "#000000",
+                        gray: "#F4F7FF"
                         
                     },
                     fontFamily: {
@@ -36,12 +36,29 @@
 
 </head>
 
-<body>
-    <header class="max-w-6xl mx-auto px-1">
-        <nav>
-             
+<body class="bg-gray font-poppins pt-6">
+    <header class="max-w-screen-2xl mx-auto px-1 bg-white rounded-2xl mb-5">
+        <nav class="px-6 py-5">
+             <div class="flex justify-between items-center">
+                <div class="flex gap-3 items-center">
+                  <img class="max-w-12" src="photo/logo.png" alt="logo_png">
+                  <h1 class="text-4xl font-light text-title">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="flex gap-9 items-center">
+                    <div class="flex gap-5 p-4 justify-between items-center bg-gray rounded-full">
+                        
+                            <img class="w-8" src="photo/checkbox.png" alt="checjbox">
+    
+                            <h3 class="text-3xl font-bold text-[#1E1E1E]">23</h3>
+                    </div>
+                    <div class="w-16 h-16 bg-gray flex justify-center items-center rounded-full">
+                          <img class="w-10" src="photo/theme-btn.png" alt="theme">
+                    </div>
+                </div>
+             </div>
         </nav>
     </header>
+
 </body>
 
 </html>
