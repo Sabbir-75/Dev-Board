@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!--===============Fontawesome Link===============-->
+    <script src="https://kit.fontawesome.com/a515b21849.js" crossorigin="anonymous"></script>
+    <!--===============Google fonts Link===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--===============Tainwind and Daisy UI Link===============-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: "#3752FD",
+                        title: "#00303C",
+                        paragraph: "#000000",
+                        gray: "#F4F7FF",
+                        dash: "rgba(55, 82, 253, 0.2)",
+                        qsdash: "rgba(149, 158, 212, 0.1)"
+
+                    },
+                    fontFamily: {
+                        poppins: ["Poppins", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray font-poppins pt-6 pb-16">
+
+    <header class="max-w-screen-2xl mx-auto px-1 bg-white rounded-2xl mb-5">
+        <nav class="px-6 py-7">
+            <div class="flex justify-between items-center">
+                <div class="flex gap-3 items-center">
+                    <img class="max-w-12" src="photo/logo.png" alt="logo_png">
+                    <h1 class="text-4xl font-light text-title">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div>
+                    <button class="text-base font-medium text-white border-none btn btn-primary bg-brand">Back to
+                        desk</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="max-w-screen-2xl mx-auto px-1">
+        <div class="text-center mb-5">
+            <h3 class="text-3xl font-semibold text-title">Blogs</h3>
+        </div>
+        <div class="space-y-5">
+
+            <div>
+                <div class="bg-white text-xl font-semibold text-title p-5 rounded-t-lg">
+                    <h4>Question-1: What are the different ways to select an element in the DOM?</h4>
+                </div>
+                <hr class="border-2 border-dashed border-qsdash">
+                <div class="bg-white text-xl font-normal text-paragraph p-5">
+                    <p>There are several ways to select an element in the DOM :</p>
+                    <ul class="list-disc list-inside">
+                        <li>getElementById();</li>
+                        <li>getElementsByClassName();</li>
+                        <li>querySelectorAll();</li>
+                        <li>querySelector();</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="bg-white text-xl font-semibold text-title p-5 rounded-t-lg">
+                    <h4>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h4>
+                </div>
+                <hr class="border-2 border-dashed border-qsdash">
+                <div class="bg-white text-xl font-normal text-paragraph p-5">
+                    <p>1. innerHTML returns tag and visible text content.<br>
+                       2. innerText returns just visible text content but doesn't consider hiddden element.<br>
+                       3. textContent property is used to set or return the text value of the selected node and all its descendants.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-white text-xl font-semibold text-title p-5 rounded-t-lg">
+                    <h4>Question-3: What is event delegation in the DOM?</h4>
+                </div>
+                <hr class="border-2 border-dashed border-qsdash">
+                <div class="bg-white text-xl font-normal text-paragraph p-5">
+                    <p>Event Delegation refers to the process of handaling events at a heigher level in the DOM than the element on which the event originated using event propagation.</p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-white text-xl font-semibold text-title p-5 rounded-t-lg">
+                    <h4>Question-4: What is event bubbling in the DOM?</h4>
+                </div>
+                <hr class="border-2 border-dashed border-qsdash">
+                <div class="bg-white text-xl font-normal text-paragraph p-5">
+                    <p>At first where an event triggered on a child element propegates upward through its ansestor in the Document Object model. </p>
+                </div>
+            </div>
+            <div>
+                <div class="bg-white text-xl font-semibold text-title p-5 rounded-t-lg">
+                    <h4>Question-5: How do you create, add, and remove elements using JavaScript?</h4>
+                </div>
+                <hr class="border-2 border-dashed border-qsdash">
+                <div class="bg-white text-xl font-normal text-paragraph p-5">
+                    <p>1. Create element: <br> let div = document.createElement("div"); <br> 
+                       2. add element : <br> section.appendChild(div); <br>
+                       3. remove element : container.removeChild(div);<br> 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
