@@ -55,7 +55,7 @@ function createDate(id) {
 
 function days(id) {
     let newdays = document.getElementById(id);
-    let allDayes = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+    let allDayes = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     let newDate = new Date();
     let newDay = newDate.getDay();
     let actualDay = allDayes[newDay];
@@ -72,6 +72,7 @@ function deccress(id) {
     let newCount = parseInt(newCountt.innerText);
     newCount -= 1;
     newCountt.innerText = newCount;
+    
 }
 
 function incress(id) {
